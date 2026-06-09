@@ -1,0 +1,94 @@
+/* Reset basic spacing styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Body settings */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f1a;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header Styling */
+.main-header {
+    text-align: center;
+    padding: 40px 20px 10px 20px;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    color: #00ffcc;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+}
+
+.site-subtitle {
+    color: #8b8baf;
+    font-size: 1rem;
+}
+
+/* Search Bar Area */
+.search-section {
+    text-align: center;
+    padding: 20px;
+}
+
+#searchBar {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px 24px;
+    font-size: 1.1rem;
+    border: 2px solid #2a2a40;
+    border-radius: 50px;
+    background-color: #16162a;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#searchBar:focus {
+    border-color: #00ffcc;
+    box-shadow: 0 0 12px rgba(0, 255, 204, 0.3);
+}
+
+/* Main Grid Layout */
+.storefront-container {
+    flex-grow: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    align-content: start;
+}
+
+/* Error Message for Missing Search Items */
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: #8b8baf;
+    font-size: 1.2rem;
+}
+
+/* Footer Element */
+.site-footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #4a4a6a;
+    font-size: 0.9rem;
+    border-top: 1px solid #16162a;
+    margin-top: 40px;
+}
