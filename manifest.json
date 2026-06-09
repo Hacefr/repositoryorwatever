@@ -1,0 +1,21 @@
+{
+  "name": "Definitive Unblocked Games",
+  "short_name": "UnblockedGames",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0f0f1a",
+  "theme_color": "#00ffcc",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
