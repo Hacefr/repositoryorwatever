@@ -8,8 +8,8 @@
 /* Base Body settings */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0f0f1a;
-    color: #ffffff;
+    background-color: #121214;
+    color: #e2e8f0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,15 +23,15 @@ body {
 }
 
 .site-title {
-    font-size: 2.5rem;
-    color: #00ffcc;
-    margin-bottom: 10px;
-    text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: 700;
 }
 
 .site-subtitle {
-    color: #8b8baf;
-    font-size: 1rem;
+    color: #94a3b8;
+    font-size: 0.95rem;
 }
 
 /* Search Bar Area */
@@ -43,19 +43,19 @@ body {
 #searchBar {
     width: 100%;
     max-width: 500px;
-    padding: 14px 24px;
-    font-size: 1.1rem;
-    border: 2px solid #2a2a40;
-    border-radius: 50px;
-    background-color: #16162a;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    background-color: #1e293b;
     color: #ffffff;
     outline: none;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 #searchBar:focus {
-    border-color: #00ffcc;
-    box-shadow: 0 0 12px rgba(0, 255, 204, 0.3);
+    background-color: #1e293b;
+    border-color: #0ea5e9;
 }
 
 /* Main Grid Layout */
@@ -70,8 +70,52 @@ body {
 .game-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 25px;
+    gap: 20px;
     align-content: start;
+}
+
+/* Flat Card Styling */
+.card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #243249;
+    border-color: #0ea5e9;
+}
+
+.card-image-placeholder {
+    width: 100%;
+    height: 130px;
+    background-color: #0f172a;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.card-tag {
+    font-size: 0.75rem;
+    color: #0ea5e9;
+    background-color: rgba(14, 165, 233, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    align-self: flex-start;
+    font-weight: 600;
 }
 
 /* Error Message for Missing Search Items */
@@ -79,16 +123,16 @@ body {
     grid-column: 1 / -1;
     text-align: center;
     padding: 40px;
-    color: #8b8baf;
-    font-size: 1.2rem;
+    color: #94a3b8;
+    font-size: 1.1rem;
 }
 
 /* Footer Element */
 .site-footer {
     text-align: center;
     padding: 30px 20px;
-    color: #4a4a6a;
-    font-size: 0.9rem;
-    border-top: 1px solid #16162a;
+    color: #64748b;
+    font-size: 0.85rem;
+    border-top: 1px solid #1e293b;
     margin-top: 40px;
 }
